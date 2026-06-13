@@ -112,21 +112,21 @@ let cliente = prompt("ingrese el monto de su compra")
 
 let dolares=parseFloat(cliente)
 
-if (dolares <= "100") {
+if (dolares <= 100) {
     console.log ("usted no tiene ningun descuento por su compra")
 }
 
-else if (dolares >= "100.1" && dolares <= "300") {
+else if (dolares > 100 && dolares <= 300) {
     console.log (`Felicitaciones usted tiene un descuento del 5% su descuento es de $${(dolares*0.05).toFixed(2)} dolares su compra quedaria en $${dolares-(dolares*0.05).toFixed(2)}`)
 }
 
-else if (dolares >= "300.1" && dolares <= "500") {
+else if (dolares > 300 && dolares <= 500) {
     console.log (`Felicitaciones usted tiene un descuento del 10% su descuento es de $${(dolares*0.10).toFixed(2)} dolares su compra quedaria en $${dolares-(dolares*0.10).toFixed(2)}`)
 }
 
-else if (dolares >= "500.1") {
+else if (dolares > 500) {
     console.log (`Felicitaciones usted tiene un descuento del 15% su descuento es de $${(dolares*0.15).toFixed(2)} dolares su compra quedaria en $${dolares-(dolares*0.15).toFixed(2)}`)
 }
 else {
-    console.log ("Por favor ingrese un numero correcto")
+    console.log ("Por favor ingrese un monto correcto de su compra para facilitar el descuento gracias")
 }
