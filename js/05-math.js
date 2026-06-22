@@ -12,10 +12,12 @@ console.log(Math.round(num1)); //redondea el valor >=5 mayor, <5 menor
 
 // console.log(numeroDecimal);
 
-let numeroFlotante = parseFloat(num1.toFixed(2));
+let numeroFlotante = Number(num1.toFixed(2));
 console.log(numeroFlotante);
 
 //números aleatorios /random
 Math.random();
 //números aleatorios entre 1 y 50
 console.log(Math.ceil(Math.random() * 50));
+
+

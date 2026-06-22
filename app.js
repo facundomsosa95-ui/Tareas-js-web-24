@@ -1,65 +1,42 @@
-//condicional Switch
-let num = 11;
-// switch (num) {
-//   case 5:
-//     console.log("Hola");
-//     break;
-//   case 4:
-//     console.log("Chau");
-//     break;
+alert("🧐Bienvenid@");
 
-//   default:
-//     console.log("No se");
-//     break;
-// }
+let frase = prompt("✍️ Ingrese una frase o texto:");
 
-let day = new Date().getDay();
-console.log("🤖 Hola! soy tu bot diario");
-switch (day) {
-  case 0:
-    console.log(
-      "Amo los domingos, excepto por esa pequeña parte donde me acuerdo de que mañana tengo que madrugar🙄.",
-    );
+let opciones =prompt (
+    "Seleccione una opción:\n" +
+    "1 - Convertir texto a MAYÚSCULAS\n" +
+    "2 - Convertir texto a minúsculas\n" +
+    "3 - Mostrar cantidad de caracteres\n" +
+    "4 - Mostrar primer carácter\n" +
+    "5 - Mostrar los primeros 10 caracteres");
+
+
+frase = frase.trim();
+
+
+
+switch (opciones) {
+  case "1" :
+      alert("🔠 Texto en MAYÚSCULAS:\n" + frase.toUpperCase())
     break;
-  case 1:
-    console.log("Si los lunes tuvieran cara, les daría un derechazo👊");
+
+  case "2" :
+      alert("🔠 Texto en minúsculas :\n" + frase.toLowerCase())
     break;
-  case 2:
-    console.log(
-      "El martes es ese día donde te das cuenta de que el fin de semana largo fue una ilusión óptica😵‍💫",
-    );
+
+  case "3" :
+      alert("📏 El texto tiene " + frase.length + " Caracteres")
     break;
-  case 3:
-    console.log(
-      "Mitad de semana: el cuerpo lo sabe, la billetera lo sufre y el cerebro ya está en modo espera🧠.",
-    );
+
+  case "4" :
+      alert("👉 El primer carácter es:" + frase.at(0))
     break;
-  case 4:
-    console.log(
-      "Técnicamente ya es viernes si aplicamos la lógica de: 'Ya fue, lo resuelvo el lunes'🫡",
-    );
+
+  case "5" :
+        alert("✂️ Primeros 10 caracteres: " + frase.substring(0,11))
     break;
-  case 5:
-    console.log("¡Viernes! Entrando en modo 'No molestar' en 3, 2, 1...😶‍🌫️");
-    break;
-    break;
+
   default:
-    console.log(
-      "Sábado: El único día donde las calorías no cuentan y las alarmas están prohibidas por ley 😁.",
-    );
+    alert ("⚠️ Opción no válida.")
     break;
 }
-
-/*
-En un restaurante los clientes pueden pedir menú de carne, pescado o verdura. Si pide carne se le ofrecerá como bebida vino tinto, si pide pescado se le ofrecerá vino blanco y si pide verdura se le ofrecerá agua
-
-Si no elije el menú de la lista aparecerá la frase elija carne, pescado o verdura.
-*/
-
-alert("🧐Bienvenid@, te voy a sugerir la bebida que acompañará tu menú.");
-
-let opcion = prompt(
-  "🧐 Qué menú deseas hoy?\n1. 🥩Carne | 2. 🐟Pescado | 3. 🥬Verdura",
-);
-
-opcion = Number(opcion);
