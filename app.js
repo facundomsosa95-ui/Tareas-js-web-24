@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 alert("🧐Bienvenid@");
 
 let frase = prompt("✍️ Ingrese una frase o texto:");
@@ -40,3 +41,5 @@ switch (opciones) {
     alert ("⚠️ Opción no válida.")
     break;
 }
+=======
+>>>>>>> 8c41f506104ae6171d2ed3a0e5b2a0e902fda109
